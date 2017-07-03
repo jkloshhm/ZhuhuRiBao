@@ -1,1 +1,1 @@
-include ':app', ':rxjavatest', ':MaterialTest'
+include ':app', ':rxjavatest', ':MaterialTest', ':MyHotfix'

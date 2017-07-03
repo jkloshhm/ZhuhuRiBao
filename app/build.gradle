@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.example.guojian.zhuhuribao"
         minSdkVersion 22
-        targetSdkVersion 25
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -20,6 +20,13 @@ android {
     }
     productFlavors {
     }
+    dexOptions {
+        incremental true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -28,7 +35,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //banner最新版本
-
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:26.0.0-alpha1'
