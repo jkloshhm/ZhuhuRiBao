@@ -19,9 +19,6 @@ android {
     }
     productFlavors {
     }
-    dexOptions {
-        incremental true
-    }
 
 }
 
