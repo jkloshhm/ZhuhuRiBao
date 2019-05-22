@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 'android-Q'
+    buildToolsVersion '29.0.0 rc2'
     defaultConfig {
         applicationId "com.example.guojian.zhuhuribao"
-        minSdkVersion 22
-        targetSdkVersion 24
+        minSdkVersion 24
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -22,10 +22,7 @@ android {
     dexOptions {
         incremental true
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+
 }
 
 dependencies {
