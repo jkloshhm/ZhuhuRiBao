@@ -3,14 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MaterialTest/MaterialTest.iml" filepath="$PROJECT_DIR$/MaterialTest/MaterialTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MaterialTest/MaterialTest.iml" filepath="$PROJECT_DIR$/MaterialTest/MaterialTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MyHotfix/MyHotfix.iml" filepath="$PROJECT_DIR$/MyHotfix/MyHotfix.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyHotfix/MyHotfix.iml" filepath="$PROJECT_DIR$/MyHotfix/MyHotfix.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZhuhuRiBao.iml" filepath="$PROJECT_DIR$/ZhuhuRiBao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ZhuhuRiBao.iml" filepath="$PROJECT_DIR$/ZhuhuRiBao.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rxjavatest/rxjavatest.iml" filepath="$PROJECT_DIR$/rxjavatest/rxjavatest.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavatest/rxjavatest.iml" filepath="$PROJECT_DIR$/rxjavatest/rxjavatest.iml" />
     </modules>
   </component>
