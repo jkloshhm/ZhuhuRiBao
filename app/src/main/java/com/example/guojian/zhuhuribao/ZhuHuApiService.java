@@ -23,4 +23,10 @@ public interface ZhuHuApiService {//http://news-at.zhihu.com/api/4/news/latest
 
     @GET("news/{id}")
     Observable<NewsDetailsBean> getNewsContent(@Path("id") int id);
+
+    /**
+     * 根据日期获取日报
+     */
+    @GET("news/{date}")
+    Observable<DailyListBean> getDailyListByDate();
 }
