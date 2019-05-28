@@ -1,7 +1,9 @@
 package com.example.guojian.zhuhuribao;
 
 import android.content.Context;
+
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
@@ -15,6 +17,7 @@ public class MySwipeRefreshLayout extends SwipeRefreshLayout {
     private int mTouchSlop;
     // 上一次触摸时的X坐标
     private float mPrevX;
+
     public MySwipeRefreshLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         // 触发移动事件的最短距离，如果小于这个距离就不触发移动控件
@@ -35,6 +38,8 @@ public class MySwipeRefreshLayout extends SwipeRefreshLayout {
                 if (xDiff > mTouchSlop + 60) {
                     return false;
                 }
+            default:
+                break;
         }
         return super.onInterceptTouchEvent(event);
     }

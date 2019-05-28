@@ -23,7 +23,6 @@ public class LogToastUtils {
 
         if (toast == null) {
             toast = Toast.makeText(context, sequence, Toast.LENGTH_SHORT);
-
         } else {
             toast.setText(sequence);
         }
@@ -33,6 +32,6 @@ public class LogToastUtils {
 
 
     public static void logUtils(String msg) {
-        Log.i(TAG,msg);
+        Log.i(TAG, msg);
     }
 }

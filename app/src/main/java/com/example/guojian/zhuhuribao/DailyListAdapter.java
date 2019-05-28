@@ -2,8 +2,10 @@ package com.example.guojian.zhuhuribao;
 
 import android.content.Context;
 import android.content.Intent;
+
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +40,7 @@ public class DailyListAdapter extends RecyclerView.Adapter<DailyListAdapter.MyVi
         @BindView(R.id.fruit_name)
         TextView fruitName;
         private CardView mCardView;
+
         public MyViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
@@ -59,9 +62,9 @@ public class DailyListAdapter extends RecyclerView.Adapter<DailyListAdapter.MyVi
             public void onClick(View v) {
                 int position = myViewHolder.getAdapterPosition();
                 int id = mStoriesBeanList.get(position).getId();
-                LogToastUtils.showShort(mContext,""+id);
-                Intent mIntent = new Intent(mContext,DailyDetailActivity.class);
-                mIntent.putExtra("newsId",id);
+                LogToastUtils.showShort(mContext, "" + id);
+                Intent mIntent = new Intent(mContext, DailyDetailActivity.class);
+                mIntent.putExtra("newsId", id);
                 //mIntent.putExtra("body",mStoriesBeanList.get(position).get);
                 mContext.startActivity(mIntent);
             }
@@ -78,10 +81,10 @@ public class DailyListAdapter extends RecyclerView.Adapter<DailyListAdapter.MyVi
 
     @Override
     public int getItemCount() {
-        LogToastUtils.showShort(mContext,""+mStoriesBeanList.size());
-        if (mStoriesBeanList.size() != 0){
+        LogToastUtils.showShort(mContext, "" + mStoriesBeanList.size());
+        if (mStoriesBeanList.size() != 0) {
             return mStoriesBeanList.size();
-        }else {
+        } else {
             return 0;
         }
     }

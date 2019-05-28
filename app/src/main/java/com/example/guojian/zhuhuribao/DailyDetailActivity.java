@@ -3,12 +3,15 @@ package com.example.guojian.zhuhuribao;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+
 import androidx.core.widget.NestedScrollView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -94,9 +97,11 @@ public class DailyDetailActivity extends AppCompatActivity {
                         String newsTitle = newsDetailsBean.getTitle();
                         LogToastUtils.showShort(DailyDetailActivity.this, newsTitle);
                         collapsingToolbar.setTitle(newsTitle);
+                        collapsingToolbar.setTitleEnabled(true);
                         //collapsingToolbar.setScrimsShown(true);
-                        collapsingToolbar.setCollapsedTitleGravity(Gravity.LEFT);
+                        collapsingToolbar.setCollapsedTitleGravity(Gravity.START);
                         collapsingToolbar.setExpandedTitleMarginStart(0);
+                        collapsingToolbar.setCollapsedTitleTextColor(getResources().getColor(R.color.colorAccent));
                         collapsingToolbar.setScrollBarSize(5);
                         WebSettings webSettings = webView.getSettings();
                         //webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
